@@ -34,7 +34,8 @@ form.addEventListener("submit", (e) => {
     const P2 = document.getElementById("p2")
     P2.innerText = "Loading ... "
 
-    let apiUrl = `http://localhost:3000/weather?address=${location}`;
+    let apiUrl = `/weather?address=${location}`;
+
     fetch(apiUrl).then((response) => {
         response.json().then((data) => {
             if (data.error) {

@@ -4,8 +4,10 @@ const hbs = require("hbs");
 const coordinates = require("./utils/coordinates")
 const forecast = require("./utils/weather")
 
-// Making express app
+
+// Making express app 
 const app = express();
+const port = process.env.PORT || 3000;
 
 
 // Define paths for express config
@@ -123,6 +125,6 @@ app.get("*", (request, response) => {
 })
 
 
-app.listen(3000, () => {
-    console.log("Listening at port 3000")
+app.listen(port, () => {
+    console.log("Listening at port ", port)
 });
