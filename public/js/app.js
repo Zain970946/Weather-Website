@@ -1,5 +1,3 @@
-console.log("Client side java script")
-
 // const Url = "http://puzzle.mead.io/puzzle";
 
 // fetch(Url).then((response) => {
